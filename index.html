@@ -14,23 +14,21 @@
 				datasets: [
 					{
 						label: "Player A",
-						values: [860, 1140, 1060, 1060, 1070],
+						values: {
+							demand: [12, 15, 2, 5, 7],
+							supply: [3, 15, 2, 4, 3],
+						},
 					},
 					{
 						label: "Player B",
-						values: [1060, 1070, 1060, 860, 1140],
-					},
-					{
-						lable: "Player C",
-						values: [1060, 1140, 1070, 860, 1060],
-					},
-					{
-						lable: "Player D",
-						values: [1060, 1070, 860, 1060, 1140],
+						values: {
+							demand: [12, 15, 2, 5, 7],
+							supply: [3, 15, 2, 4, 3],
+						},
 					},
 				],
 			};
-			barChart("myChart", data);
+			stackedBarChart("myChart", data);
 		</script>
 	</body>
 </html>

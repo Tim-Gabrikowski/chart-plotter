@@ -23,6 +23,7 @@ You can now Draw the following charts:
 
 - [Line charts](#drawing-linecharts)
 - [Bar charts](#drawing-barcharts)
+- [Stacked bar charts](#drawing-stacked-barchart)
 
 ### drawing linecharts
 
@@ -75,6 +76,33 @@ barChart("myChart", {
 		{
 			lable: "Player D",
 			values: [1060, 1070, 860, 1060, 1140],
+		},
+	],
+});
+```
+
+### drawing stacked barchart
+
+use the `stackedBarChart(canvasId, data)` function. Warning! The data is formatted differently!
+
+```javascript
+stackedBarChart("myChart", {
+	rounds: 10,
+	datasets: [
+		// list of players :
+		{
+			label: "Player A", // playernames
+			values: {
+				demand: [12, 15, 2, 5, 7], // demand values (in order of x axis)
+				supply: [3, 15, 2, 4, 3], // supply values (in order of x axis)
+			},
+		},
+		{
+			label: "Player B",
+			values: {
+				demand: [12, 15, 2, 5, 7],
+				supply: [3, 15, 2, 4, 3],
+			},
 		},
 	],
 });

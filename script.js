@@ -40,3 +40,35 @@ function lineChart(canvasId, data) {
 		},
 	});
 }
+function barChart(canvasId, data) {
+	new Chart(canvasId, {
+		type: "bar",
+		data: {
+			labels: xLables(data.rounds),
+			datasets: data.datasets.map((row, index, array) => {
+				return {
+					label: row.label,
+					data: row.values,
+					borderColor: getColor(index, array.length),
+					backgroundColor: getColor(index, array.length),
+					fill: false,
+				};
+			}),
+		},
+		options: {
+			legend: { display: true },
+			scales: {
+				yAxes: [
+					{
+						display: true,
+						ticks: {
+							beginAtZero: true,
+							steps: 10,
+							stepValue: 5,
+						},
+					},
+				],
+			},
+		},
+	});
+}

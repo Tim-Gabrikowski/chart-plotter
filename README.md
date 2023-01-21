@@ -29,23 +29,22 @@ use the `linechart(canvasId, data)` function.
 
 ```javascript
 lineChart("myChart", {
-	rounds: 10, // how many Rounds (x axis)
-	players: [
-		// a list of PLayers (the different lines)
+	rounds: 10,
+	datasets: [
 		{
-			name: "Player A", // name of each player (lable of line)
-			values: [860, 1140, 1060, 1060, 1070], // y values (e.g. how much money)
+			label: "Player A",
+			values: [860, 1140, 1060, 1060, 1070],
 		},
 		{
-			name: "Player B",
+			label: "Player B",
 			values: [1060, 1070, 1060, 860, 1140],
 		},
 		{
-			name: "Player C",
+			lable: "Player C",
 			values: [1060, 1140, 1070, 860, 1060],
 		},
 		{
-			name: "Player D",
+			lable: "Player D",
 			values: [1060, 1070, 860, 1060, 1140],
 		},
 	],

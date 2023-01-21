@@ -13,9 +13,9 @@ function lineChart(canvasId, data) {
 		type: "line",
 		data: {
 			labels: xLables(data.rounds),
-			datasets: data.players.map((row, index, array) => {
+			datasets: data.datasets.map((row, index, array) => {
 				return {
-					label: row.name,
+					label: row.label,
 					data: row.values,
 					borderColor: getColor(index, array.length),
 					backgroundColor: getColor(index, array.length),

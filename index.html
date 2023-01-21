@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Chart.js example</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+		<script src="./script.js"></script>
+	</head>
+	<body>
+		<canvas id="myChart" style="width: 100%; max-width: 700px"></canvas>
+
+		<script>
+			var data = {
+				rounds: 10,
+				players: [
+					{
+						name: "Player A",
+						values: [860, 1140, 1060, 1060, 1070],
+					},
+					{
+						name: "Player B",
+						values: [1060, 1070, 1060, 860, 1140],
+					},
+					{
+						name: "Player C",
+						values: [1060, 1140, 1070, 860, 1060],
+					},
+					{
+						name: "Player D",
+						values: [1060, 1070, 860, 1060, 1140],
+					},
+				],
+			};
+			lineChart("myChart", data);
+		</script>
+	</body>
+</html>

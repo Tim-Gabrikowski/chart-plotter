@@ -42,11 +42,11 @@ lineChart("myChart", {
 			values: [1060, 1070, 1060, 860, 1140],
 		},
 		{
-			lable: "Player C",
+			label: "Player C",
 			values: [1060, 1140, 1070, 860, 1060],
 		},
 		{
-			lable: "Player D",
+			label: "Player D",
 			values: [1060, 1070, 860, 1060, 1140],
 		},
 	],
@@ -70,11 +70,11 @@ barChart("myChart", {
 			values: [1060, 1070, 1060, 860, 1140],
 		},
 		{
-			lable: "Player C",
+			label: "Player C",
 			values: [1060, 1140, 1070, 860, 1060],
 		},
 		{
-			lable: "Player D",
+			label: "Player D",
 			values: [1060, 1070, 860, 1060, 1140],
 		},
 	],

@@ -1,5 +1,5 @@
 function xLables(rounds) {
-	var array = [...Array(data.rounds + 1).keys()];
+	var array = [...Array(rounds + 1).keys()];
 	array.shift();
 	return array;
 }

@@ -10,7 +10,7 @@ Add the following scripts to your HTML-page:
 
 ```html
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
-<script src="./script.js"></script>
+<script src="https://tim-gabrikowski.github.io/chart-plotter/script.js"></script>
 ```
 
 Add a `Canvas`-Element to your body and give it an unique ID.

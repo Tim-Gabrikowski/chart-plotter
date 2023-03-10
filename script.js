@@ -9,7 +9,7 @@ function getColor(index, players, saturation = "100%", value = "50%") {
 }
 
 function lineChart(canvasId, data) {
-	new Chart(canvasId, {
+	return new Chart(canvasId, {
 		type: "line",
 		data: {
 			labels: xLables(data.rounds),
@@ -41,7 +41,7 @@ function lineChart(canvasId, data) {
 	});
 }
 function barChart(canvasId, data) {
-	new Chart(canvasId, {
+	return new Chart(canvasId, {
 		type: "bar",
 		data: {
 			labels: xLables(data.rounds),
@@ -98,7 +98,7 @@ function stackedBarChart(canvasId, data) {
 		});
 	});
 
-	new Chart(canvasId, {
+	return new Chart(canvasId, {
 		type: "bar",
 		data: {
 			labels: xLables(data.rounds),
